@@ -34,6 +34,8 @@
     font-family: "Lexend";
     text-shadow: -2px 2px 0px black;
     transition: ease-in-out 100ms;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-button:hover {
