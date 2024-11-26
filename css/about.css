@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: linear-gradient(45deg, #7405b4, #380046);
+}
+
 .container {
     background: linear-gradient(45deg, #7405b4, #380046);
     width: 100%;
@@ -19,33 +23,6 @@
     position: sticky;
     top: 0;
     justify-content: space-evenly;
-}
-
-h1 {
-    font-size: 64px;
-    font-family: "Lexend";
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 32px rgba(0, 255, 255, 0.25), 4px 4px 8px rgb(0, 0, 0, 0.25);
-    text-align: center;
-    margin: 128px auto;
-}
-
-hr {
-    border: 2px solid #ffffff;
-    border-radius: 16px;
-    width: 512px;
-    margin: 128px auto;
-    box-shadow: 0px 0px 16px rgba(0, 255, 255, 0.35), 4px 4px 4px rgb(0, 0, 0, 0.35);
-}
-
-h2 {
-    font-size: 20px;
-    font-weight: 300;
-    font-family: "Lexend";
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 32px rgba(0, 255, 255, 0.25), 4px 4px 8px rgb(0, 0, 0, 0.25);
-    text-align: center;
-    margin: 128px auto;
 }
 
 .navbar img {
@@ -78,11 +55,40 @@ h2 {
     font-size: 25px;
 }
 
-.navbar-button:active {
+h1 {
+    font-size: 64px;
+    font-family: "Lexend";
     color: rgb(255, 255, 255);
-    text-decoration: underline;
-    text-shadow: 0px 0px 16px cyan;
-    font-size: 24px;
+    text-shadow: 0px 0px 32px rgba(0, 255, 255, 0.25), 4px 4px 8px rgb(0, 0, 0, 0.25);
+    text-align: center;
+    margin: 128px auto;
+}
+
+hr {
+    border: 2px solid #ffffff;
+    border-radius: 16px;
+    width: 512px;
+    margin: 128px auto;
+    box-shadow: 0px 0px 16px rgba(0, 255, 255, 0.35), 4px 4px 4px rgb(0, 0, 0, 0.35);
+}
+
+.description-container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.description {
+    font-size: 20px;
+    font-family: "Lexend";
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 6px rgb(0, 0, 0, 0.65);
+    text-align: center;
+    margin: 0 auto;
 }
 
 .footer-content {
@@ -122,64 +128,4 @@ h2 {
     text-decoration: underline;
     text-shadow: 0px 0px 16px cyan;
     font-size: 20px;
-}
-
-.create-meme-button {
-    color: rgb(0, 0, 0);
-    background-color: cyan;
-    display: flex;
-    width: 256px;
-    font-size: 24px;
-    text-decoration: none;
-    border-radius: 12px;
-    box-shadow: 2px 2px 8px rgb(0, 0, 0, 0.5);
-    font-family: "Lexend";
-    text-shadow: 0px 0px 8px rgb(0, 110, 255);
-    transition: ease-in-out 100ms;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 128px;
-    padding: 16px;
-}
-
-.create-meme-button:hover {
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-    text-shadow: 0px 0px 16px cyan;
-    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.5);
-    font-size: 25px;
-    background-color: rgb(0, 110, 255);
-}
-
-@media (max-width: 1280px) {
-    h1 {
-        font-size: 48px;
-        margin: 64px auto;
-    }
-
-    .navbar {
-        flex-direction: column;
-        margin: 32px;
-        padding: 16px;
-    }
-
-    .navbar-button {
-        font-size: 20px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        padding: 16px;
-    }
-
-    .footer-button {
-        font-size: 16px;
-    }
-
-    .create-meme-button {
-        width: 100%;
-        font-size: 20px;
-        margin-top: 64px;
-    }
 }

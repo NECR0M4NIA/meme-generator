@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meme Generator</title>
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contact.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,15 +20,33 @@
     <main class="container">
         <div class="navbar">
             <a class="logo-button" href="./index.html"><img src="./images/MEME GENERATOR LOGO.png" alt="Logo icon"></a>
-            <a class="navbar-button" href="./create.html">Créer</a>
+            <a class="navbar-button" href="#">Créer</a>
             <a class="navbar-button" href="#">Tendances</a>
             <a class="navbar-button" href="./contact.html">Contact</a>
             <a class="navbar-button" href="./about.html">À propos</a>
         </div>
-        <h1>ACCUEIL</h1>
+        <h1>CONTACT</h1>
         <hr>
-        <h2>Le meilleur endoit pour créer des memes !</h2>
-        <a class="create-meme-button" href="./create.html">Créer un meme</a>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="lastname">Prénom:</label>
+                <input type="text" id="lastname" name="lastname" required>
+
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <a class="submit" href="./about.html">Envoyer</a>
+            </form>
+        </div>
+        </div>
     </main>
 
     <footer>
@@ -37,14 +55,13 @@
                 <img class="footer-image" src="./images/MEME GENERATOR LOGO.png" alt="Logo">
             </div>
             <div class="footer-nav">
-                <a class="footer-button" href="./create.html">Créer</a>
+                <a class="footer-button" href="#">Créer</a>
                 <a class="footer-button" href="#">Tendances</a>
                 <a class="footer-button" href="./contact.html">Contact</a>
                 <a class="footer-button" href="./about.html">À propos</a>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

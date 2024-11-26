@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background: linear-gradient(45deg, #7405b4, #380046);
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.navbar {
+    margin: 56px;
+    padding: 24px;
+    border-radius: 16px;
+    background: linear-gradient(45deg, #5e166d, #9704ec);
+    box-shadow: 0px 8px 32px #00000070, inset 0px 0px 16px #2c0164, -8px 8px 0px #000000;
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-evenly;
+}
+
+.navbar img {
+    width: 182px;
+    filter: drop-shadow(0px 0px 16px #00000080);
+    transition: 150ms;
+}
+
+.navbar img:hover {
+    width: 187px;
+    filter: drop-shadow(8px 8px 16px #00000080);
+}
+
+.navbar-button {
+    color: rgb(0, 226, 255);
+    display: flex;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: "Lexend";
+    text-shadow: -2px 2px 0px black;
+    transition: ease-in-out 100ms;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-button:hover {
+    color: rgb(128, 255, 255);
+    text-decoration: underline;
+    text-shadow: 0px 0px 16px cyan;
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 64px;
+    font-family: "Lexend";
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 32px rgba(0, 255, 255, 0.25), 4px 4px 8px rgb(0, 0, 0, 0.25);
+    text-align: center;
+    margin: 128px auto;
+}
+
+hr {
+    border: 2px solid #ffffff;
+    border-radius: 16px;
+    width: 512px;
+    margin: 128px auto;
+    box-shadow: 0px 0px 16px rgba(0, 255, 255, 0.35), 4px 4px 4px rgb(0, 0, 0, 0.35);
+}
+
+.description-container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.description {
+    font-size: 20px;
+    font-family: "Lexend";
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 6px rgb(0, 0, 0, 0.65);
+    text-align: center;
+    margin: 0 auto;
+}
+
+form {
+    color: white;
+    font-size: 20px;
+    font-family: "Lexend";
+    text-shadow: 2px 2px 6px rgb(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+label {
+    margin: 6px;
+}
+
+input {
+    width: 400px;
+    height: 32px;
+    border-radius: 6px;
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    font-family: "Lexend";
+    background-color: #ffffff;
+    box-shadow: 0px 0px 16px rgba(0, 255, 255, 0.35), 4px 4px 4px rgb(0, 0, 0, 0.35);
+}
+
+textarea {
+    width: 400px;
+    height: 128px;
+    border-radius: 6px;
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    font-family: "Lexend";
+    background-color: #ffffff;
+    box-shadow: 0px 0px 16px rgba(0, 255, 255, 0.35), 4px 4px 4px rgb(0, 0, 0, 0.35);
+}
+
+.submit {
+    color: black;
+    text-decoration: none;
+    width: 128px;
+    height: 32px;
+    border-radius: 6px;
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    font-family: "Lexend";
+    background-color: #ffffff;
+    box-shadow: 0px 0px 16px rgba(0, 255, 255, 0.35), 4px 4px 4px rgb(0, 0, 0, 0.35);
+    margin: 16px;
+    transition: ease-in-out 100ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit:hover {
+    background-color: #dadada;
+    color: #363636;
+    box-shadow: 0px 0px 16px rgba(0, 255, 255, 0.35), 4px 4px 4px rgb(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 16px;
+    background: linear-gradient(45deg, #5e166d, #9704ec);
+    box-shadow: 0px 8px 32px #00000070, inset 0px 0px 16px #2c0164, -8px 8px 0px #000000;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-image {
+    width: 192px;
+    filter: drop-shadow(0px 0px 16px #00000080);
+    transition: 150ms;
+    margin-right: 32px;
+}
+
+.footer-button {
+    color: rgb(0, 226, 255);
+    margin-left: 32px;
+    display: flex;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "Lexend";
+    text-shadow: -2px 2px 0px black;
+    transition: ease-in-out 100ms;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-button:hover {
+    color: rgb(128, 255, 255);
+    text-decoration: underline;
+    text-shadow: 0px 0px 16px cyan;
+    font-size: 20px;
+}
