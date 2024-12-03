@@ -22,13 +22,37 @@
             display: flex;
             position: sticky;
             top: 0;
-            justify-content: space-between;
+            z-index: 1;
+        }
+
+        .navbar-button-active {
+            color: white;
+            display: flex;
+            font-size: 24px;
+            text-decoration: none;
+            font-family: "Lexend";
+            text-shadow: -2px 2px 0px black;
+            transition: ease-in-out 100ms;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar-button-active:hover {
+            color: white;
+            text-decoration: none;
+            font-size: 26px;
+            font-family: "Lexend";
+            text-shadow: -2px 2px 0px black;
+            transition: ease-in-out 100ms;
+            justify-content: center;
+            align-items: center;
         }
 
         .navbar img {
             width: 182px;
             filter: drop-shadow(0px 0px 16px #00000080);
             transition: 150ms;
+            margin-left: 56px;
         }
 
         .navbar img:hover {
@@ -37,10 +61,12 @@
         }
 
         .navbar-button {
-            color: rgb(0, 226, 255);
+            color: rgb(0, 153, 255);
             display: flex;
             font-size: 24px;
             text-decoration: none;
+            margin-left: 48px;
+            margin-right: 48px;
             font-family: "Lexend";
             text-shadow: -2px 2px 0px black;
             transition: ease-in-out 100ms;
@@ -62,7 +88,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background: linear-gradient(45deg, #5e166d, #9704ec);
+            background: linear-gradient(5deg, #000000, #9704ec);
         }
 
         h1 {
@@ -87,6 +113,15 @@
             border-radius: 4px;
         }
 
+        hr {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+            width: 20%;
+            border-width: 2px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+        }
+
         button {
             background-color: #007BFF;
             color: #fff;
@@ -97,6 +132,55 @@
             border-radius: 4px;
             transition: background-color 0.3s ease;
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer-content {
+            display: flex;
+            border-radius: 16px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 16px;
+            background: linear-gradient(45deg, #592261, #9704ec);
+            box-shadow: 0px 8px 32px #00000070, inset 0px 0px 16px #2c0164, -8px 8px 0px #000000;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .footer-image {
+            width: 192px;
+            filter: drop-shadow(0px 0px 16px #00000080);
+            transition: 150ms;
+            margin-right: 32px;
+        }
+
+        .footer-button {
+            color: rgb(0, 226, 255);
+            margin-left: 32px;
+            display: flex;
+            font-size: 18px;
+            text-decoration: none;
+            font-family: "Lexend";
+            text-shadow: -2px 2px 0px black;
+            transition: ease-in-out 100ms;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-button:hover {
+            color: rgb(128, 255, 255);
+            text-decoration: underline;
+            text-shadow: 0px 0px 16px cyan;
+            font-size: 20px;
+        }
+
+        .footer-text {
+            font-size: 16px;
+            font-family: "Lexend";
+            color: rgb(255, 255, 255);
+            text-shadow: 0px 0px 32px rgba(0, 255, 255, 0.25), 0px 0px 8px rgb(0, 0, 0, 1);
+            text-align: center;
+            margin-left: 64px;
         }
 
         button:hover {
@@ -117,26 +201,59 @@
 <body>
     <div class="navbar">
         <a class="logo-button" href="./index.html"><img src="./images/MEME GENERATOR LOGO.png" alt="Logo icon"></a>
-        <a class="navbar-button" href="#">Créer</a>
-        <a class="navbar-button" href="#">Tendances</a>
+        <a class="navbar-button-active" href="./create.html">Créer</a>
+        <a class="navbar-button" href="./trends.html">Tendances</a>
         <a class="navbar-button" href="./contact.html">Contact</a>
         <a class="navbar-button" href="./about.html">À propos</a>
     </div>
-    <h1>MEME EDITOR</h1>
-    <div id="canvas-container">
-        <img id="background-image" src="./images/template1.jpg" alt="Image de fond" style="width: 500px;">
-        <div class="text" contenteditable="true" style="top: 70px; left: 320px;">Texte fixe 1</div>
-        <div class="text" contenteditable="true" style="top: 310px; left: 320px;">Texte fixe 3</div>
+    <h1>DRAKE TEMPLATE</h1>
+    <!-- Premier meme -->
+    <div id="canvas-container-1">
+        <img id="background-image-1" src="./images/template1.jpg" alt="Image de fond"
+            style="width: 600px; box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.45), 0px 0px 32px black;">
+        <div class="text" contenteditable="true" style="top: 450px; left: 1020px;">Texte 1</div>
+        <div class="text" contenteditable="true" style="top: 720px; left: 1020px;">Texte 2</div>
     </div>
-    <div id="controls">
-        <button id="download-png">Télécharger en PNG</button>
-        <button id="download-jpg">Télécharger en JPG</button>
+    <div id="controls-1">
+        <button id="download-png-1">Télécharger en PNG</button>
+        <button id="download-jpg-1">Télécharger en JPG</button>
     </div>
+
+    <hr>
+    <h1>CRYING CAT</h1>
+    <!-- Deuxième meme -->
+    <div id="canvas-container-2">
+        <img id="background-image-2" src="./images/template2.jpg" alt="Image de fond"
+            style="width: 600px; box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.45), 0px 0px 32px rgba(0, 0, 0, 0.37);">
+        <div class="text" contenteditable="true" style="top: 1500px; left: 850px; font-size: 36px;">Texte fixe 1</div>
+    </div>
+    <div id="controls-2">
+        <button id="download-png-2">Télécharger en PNG</button>
+        <button id="download-jpg-2">Télécharger en JPG</button>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-icon">
+                <img class="footer-image" src="./images/MEME GENERATOR LOGO.png" alt="Logo">
+            </div>
+            <div class="footer-nav">
+                <a class="footer-button" href="./create.html">Créer</a>
+                <a class="footer-button" href="./trends.html">Tendances</a>
+                <a class="footer-button" href="./contact.html">Contact</a>
+                <a class="footer-button" href="./about.html">À propos</a>
+            </div>
+            <div>
+                <p class="footer-text">© 2024 Meme Generator. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script>
         // Télécharger le rendu final
-        function downloadImage(format) {
-            html2canvas(document.querySelector("#canvas-container")).then(canvas => {
+        function downloadImage(containerId, format) {
+            html2canvas(document.querySelector(`#canvas-container-${containerId}`)).then(canvas => {
                 const link = document.createElement('a');
                 link.download = `image.${format}`;
                 link.href = canvas.toDataURL(`image/${format}`);
@@ -144,8 +261,14 @@
             });
         }
 
-        document.getElementById('download-png').addEventListener('click', () => downloadImage('png'));
-        document.getElementById('download-jpg').addEventListener('click', () => downloadImage('jpeg'));
+        // Gestionnaires d'événements pour le premier meme
+        document.getElementById('download-png-1').addEventListener('click', () => downloadImage('1', 'png'));
+        document.getElementById('download-jpg-1').addEventListener('click', () => downloadImage('1', 'jpeg'));
+
+        // Gestionnaires d'événements pour le deuxième meme
+        document.getElementById('download-png-2').addEventListener('click', () => downloadImage('2', 'png'));
+        document.getElementById('download-jpg-2').addEventListener('click', () => downloadImage('2', 'jpeg'));
+
     </script>
 </body>
 
